@@ -42,6 +42,13 @@
     shell: hwclock -w
     tags: ntp
 
+
+  - name: Unlink localtime
+    command: sudo unlink /etc/localtime
+ 
+  - name: Change date format to IST
+    command: sudo ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+
   - name: Display Date
     command: date
 
