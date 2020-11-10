@@ -42,6 +42,9 @@
     shell: hwclock -w
     tags: ntp
 
+  - name: Display Date
+    shell: date
+
   handlers:
   - name: restart ntpd
     service: name=ntpd state=restarted
