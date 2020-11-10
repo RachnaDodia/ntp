@@ -31,7 +31,7 @@
     tags: ntp
  
   - name: Sync time initialy
-    shell: ntpdate 172.16.20.1
+    shell: ntpdate 0.in.pool.ntp.org
     tags: ntp
 
   - name: Make sure NTP is started up
