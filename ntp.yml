@@ -43,7 +43,7 @@
     tags: ntp
 
   - name: Display Date
-    shell: date
+    command: date
 
   handlers:
   - name: restart ntpd
