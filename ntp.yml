@@ -21,7 +21,7 @@
     shell: timedatectl set-timezone Europe/Berlin
  
   - name: Copy over the NTP configuration
-    template: src=./templates/ntp.conf dest=/etc/ntp.conf
+    template: src=/root/ntp.conf dest=/etc/ntp.conf
     notify:
     - restart ntpd
     tags: ntp
