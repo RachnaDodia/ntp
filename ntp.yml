@@ -42,7 +42,6 @@
     shell: hwclock -w
     tags: ntp
 
-
   - name: Unlink localtime
     command: sudo unlink /etc/localtime
  
