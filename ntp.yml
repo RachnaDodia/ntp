@@ -14,7 +14,7 @@
     shell: firewall-cmd --reload
 
   - name: Make sure Chrony is started up
-    service: name=chronyd state=running enabled=yes
+    service: name=chronyd state=started enabled=yes
     tags: chrony
  
   - name: set timezone
@@ -35,7 +35,7 @@
     tags: ntp
 
   - name: Make sure NTP is started up
-    service: name=ntpd state=running enabled=yes
+    service: name=ntpd state=restarted enabled=yes
     tags: ntp
 
   - name: Sync hwclock
